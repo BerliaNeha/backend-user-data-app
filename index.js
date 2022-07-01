@@ -34,6 +34,11 @@ app.use(express.json());
 
 app.use(morgan("tiny"));
 
+
+app.get ("/",(req, res) =>{
+    res.send("<h1>backend-user-data-app</h1>")
+})
+
 app.use("/register", registerRouter);
 
 app.use("/login", loginRouter);
