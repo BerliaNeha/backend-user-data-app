@@ -26,7 +26,7 @@ export const db = new Low(adapter);
 //await db.read();
 
 
-app.use(cors({origin:"https://backend-user-data-app.vercel.app/", credentials:true}));
+app.use(cors({origin:"http://localhost:3001", credentials:true}));
 
 app.use(cookieParser());
 
